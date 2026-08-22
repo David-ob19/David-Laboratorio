@@ -1,0 +1,14 @@
+Algoritmo Presentaciónpersonal
+	Definir nombre Como cadena
+	Definir edad Como Real
+	Definir salida como cadena
+	//Proceso
+	Escribir "ingrese su nombre"
+	Leer nombre 
+	Escribir "Ingrese su edad"
+	Leer edad
+	//Salisa 
+	Escribir "nombre del usuario:  ", nombre
+	Escribir "edad del usuario;  ", edad 
+	
+FinAlgoritmo
