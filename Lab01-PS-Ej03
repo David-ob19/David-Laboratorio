@@ -1,0 +1,23 @@
+Algoritmo LLegaralauniversidad
+	//ENTRADA
+	Definir ubicaciondeorigen como cadena
+	Definir universidaddedestino como cadena
+	Definir mediodetransporte como cadena 
+	Definir salida como cadena
+
+	
+	//Proceso 
+	
+	Escribir "Pasos de la salida de un estudiante de su casa hacia la universidad"
+	Escribir "Paso 1: salir de la casa"
+	Escribir "Paso 2: tomar el medio de transporte y trasladarse"
+	Escribir "Paso 3: ubicado en la universidad" 
+	Escribir "paso 4; ingresar al aula"
+	
+	//Salida
+	
+	Escribir "El estudiante ya se encuentra ubicado en el aula"
+
+	
+	
+FinAlgoritmo
