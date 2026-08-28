@@ -1,0 +1,43 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main (){
+//entrada
+
+string nombre;
+int edad;
+string carrera;
+int semestre;
+
+//proceso
+ cout<< "Ingresa el nombre; ";
+ cin>> nombre;
+ cout<< "Ingresa la edad: ";
+ cin>> edad;
+ cout<<"Ingresa la carrera: ",
+ cin>> carrera;
+ cout<< "Ingresa el semestre: ";
+ cin>> semestre;
+
+ //Salida
+
+ cout << "\nnombre: " <<nombre<< endl;
+ cout << "\nedad: " <<edad<< endl;
+ cout << "\ncarrera: " <<carrera<< endl;
+ cout << "\nsemestre: " <<semestre<< endl;
+
+ //condiciòn
+
+ if (edad>= 18) {
+
+        cout<< "El estudiante es mayor de edad"<< endl;
+ }
+ else {
+
+    cout<< "El estudiante es menor de edad"<< endl;
+ }
+
+
+return 0;
+}
