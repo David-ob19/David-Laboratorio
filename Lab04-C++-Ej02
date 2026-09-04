@@ -1,0 +1,51 @@
+#include <iostream>
+#include <string>
+
+
+
+//Def variables
+string nombre;
+string categoria;
+double monto;
+double descuento;
+double total;
+
+//Entrada
+
+cout<< "Ingrese el nombre del cliente: ";
+cin>>nombre;
+cout<< "Ingrese el monto total de la compra: ";
+cin>>monto
+
+//Proceso
+if (monto<=100)
+    {categoria="sin descuento"; descuento=0;
+    }
+else if (monto>100 && monto<=500)
+{categora="descuento bronde";
+descuento=(monto*0.05);
+
+}
+else if (monto>500 && monto<=100)
+{categoria="descuento plata";
+descuento= (monto*0.10);
+
+}
+else if (monto>1000)
+{categoria="descuento de oro";
+descuento=(monto*0.15)
+
+}
+
+total=monto-descuento;
+//salida
+cout<< "Nombre del cliente: "<<nombre<<endl;
+cout<< "categoria del descuento: "<<categoria<<endl;
+cout<< "monto a pagar: "<<monto<<endl;
+cout<< "descuento aplicado: "<<descuento<<endl;
+cout<< "Total a pagar: "<<total<<endl;
+
+
+
+    return 0;
+}
