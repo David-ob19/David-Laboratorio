@@ -1,0 +1,62 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main () {
+
+//Def de variables
+string nombre;
+string categoria;
+string minimo;
+string domestico;
+string comercial;
+string industrial;
+double m3;
+double costom3;
+int montofijo=10;
+double pagototal;
+
+//Entrada
+
+cout<< "Ingrese el nombre del cliente: ";
+cin>>nombre;
+cout<< "Ingrese el consumo total de agua: ";
+cin>>m3;
+
+//Proceso
+
+if (m3>0 && m3<=15)
+{
+    costom3=m3*1.20;
+    categoria="minimo";
+    }
+else if (m3>15 && m3<=35)
+    {
+        costom3=m3*2.50;
+        categoria="domestico";
+}
+else if (m3>35 && m3<=70)
+    {
+        costom3=m3*4.00;
+        categoria="comercial";
+        }
+else if (m3>70)
+{
+        costom3=m3*6.50;
+        categoria="industrial";
+        }
+
+  pagototal=costom3+montofijo;
+
+//salida
+
+cout<< "Nombre del cliente: "<<nombre<<endl;
+cout<< "Monto fijo a pagar: "<<montofijo<<endl;
+cout<< "Pago total: "<<pagototal<<"Bs"<<endl;
+cout<< "categoria: "<<categoria<<endl;
+
+
+
+return 0;
+}
