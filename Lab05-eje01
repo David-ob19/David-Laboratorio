@@ -1,0 +1,66 @@
+#include <iostream>
+using namespace std;
+int main() {
+    char opcion;
+    int peso;
+    int tarifabase, preciokgextra, pagototal, hora;
+    
+    do {
+        
+    cout<<"\n ======================================"<<endl;
+    cout<<"ENVIOS Y ENCOMIENDAS"<<endl;
+    cout<<" ======================================"<<endl;
+    cout<< "La paz/El Alto [L]"<<endl;
+    cout<< "Cochabamba [C]"<<endl;
+    cout<< "Santa Cruz [S]"<<endl;
+    cout<< "Salir del sistema [X]"<<endl;
+    
+    cout<<"Ingrese una opcion: "<<endl;
+    cin>>opcion;
+    
+    switch (opcion) {
+        
+     case 'L':
+     case 'l':
+     tarifabase=7;
+     preciokgextra=3;
+     break;
+     
+     case'C':
+     case'c':
+     break;
+     tarifabase=5;
+     preciokgextra=2;
+     
+     case'S':
+     case's':
+     break;
+     tarifabase=8;
+     preciokgextra=4;
+     
+     case'X':
+     case'x':
+     cout<<"Saliendo del sisteama..."<<endl;
+    
+     
+     }
+     
+     cout<<"Ingrese el peso del envio en kg: ";
+     cin>>peso;
+     
+     if(peso<=2){
+    pagototal=tarifabase;
+         
+     }
+     else if (peso>2) {
+         pagototal=tarifabase+(peso-2)*preciokgextra; 
+     }
+     cout<<"EL pagototal será: "<<pagototal<<endl;
+     
+     
+    
+} while (opcion !='X' && opcion!='x');
+
+    
+    return 0;
+}
