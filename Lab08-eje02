@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int n;
+    int sumaN = 0;
+    int cantDigitos = 0;
+    int sumaDigitos = 0;
+    int aux;
+
+    do {
+        cout << "Ingrese un numero entero positivo N: ";
+        cin >> n;
+        if (n <= 0) {
+            cout << "Error: el numero debe ser mayor a 0." << endl;
+        }
+    } while (n <= 0);
+
+    for (int i = 1; i <= n; i = i + 1) {
+        sumaN = sumaN + i;
+    }
+
+    aux = n;
+    while (aux > 0) {
+        cantDigitos = cantDigitos + 1;
+        aux = aux / 10;
+    }
+
+    aux = n;
+    do {
+        sumaDigitos = sumaDigitos + (aux % 10);
+        aux = aux / 10;
+    } while (aux > 0);
+
+    cout << endl;
+    cout << "Suma desde 1 hasta N: " << sumaN << endl;
+    cout << "Cantidad de digitos: " << cantDigitos << endl;
+    cout << "Suma de sus digitos: " << sumaDigitos << endl;
+
+    return 0;
+}
